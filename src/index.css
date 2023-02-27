@@ -48,3 +48,21 @@
   color: #f1356d;
   margin-bottom: 8px;
 }
+
+.counter button {
+  border-radius: 8px;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+
+.counter button:hover {
+  text-decoration: none;
+  background-color: #f1356d;
+  color: white;
+  border: 1px solid black;
+}
+
+button + button {
+  margin-left: 8px;
+}
