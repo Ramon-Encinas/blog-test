@@ -1,6 +1,4 @@
-const BlogList = ({ blogs, title }) => {
-    // const blogs = props.list;
-    // const title = props.title;
+const BlogList = ({ blogs, title, handleDelete }) => {
 
   return (
     <div className="blog-list">
@@ -9,6 +7,7 @@ const BlogList = ({ blogs, title }) => {
         <div className="blog-preview" key={blog.id}>
           <h2>{blog.title}</h2>
           <p>Written by {blog.author}</p>
+          <button onClick={() => handleDelete(blog.id)}>Delete blog</button>
         </div>
       ))}
     </div>
@@ -21,7 +20,7 @@ export default BlogList;
 // Access the property values from the props object:
 //
 // const BlogList = (props) => {
-//     const blogs = props.list; 
+//     const blogs = props.blogs; 
 //     const title = props.title; }
 
 // We can destructure the props object from 
