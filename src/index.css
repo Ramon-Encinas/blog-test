@@ -68,3 +68,7 @@
 button + button {
   margin-left: 8px;
 }
+
+.blog-preview a {
+  text-decoration: none;
+}
